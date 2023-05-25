@@ -1,40 +1,39 @@
 :root {
-    --dark: #374151;
-    --darker: #1f2937;
-    --darkest: #111827;
-    --gray: #6b7280;
-    --light: #eee;
-    --pink: #ec4899;
-    --purple: #8b5cf6;
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Fira sans', sans-serif;
-    
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background: var(--dark);
-    color: #fff
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #FFF;
+	background-color: var(--dark);
 }
 
 header {
-    padding: 2rem 1rem;
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    font-weight: 300;
-    color: var(--gray);
-    margin-bottom: 1rem;
+header h1{ 
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: var(--grey);
+	margin-bottom: 1rem;
 }
 
 #new-task-form {
@@ -42,10 +41,10 @@ header h1 {
 }
 
 input, button {
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
 }
 
 #new-task-input {
@@ -63,14 +62,14 @@ input, button {
 }
 
 #new-task-submit {
-    font-size: 1.25rem;
-    font-weight: 700;
-    background-image: linear-gradient(to right, var(--pink), var(--purple));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    cursor: pointer;
-    transition: 0.5s;
+	color: var(--pink);
+	font-size: 1.25rem;
+	font-weight: 700;
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
 }
 
 #new-task-submit:hover {
@@ -82,13 +81,15 @@ input, button {
 }
 
 main {
-    flex: 1 1 0%;
-    padding: 2rem 1rem;
-    max-width: 800PX;
-    width: 100%;
-    margin: 0 auto;
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
 }
 
+.task-list {
+	padding: 1rem;
+}
 
 .task-list h2 {
 	font-size: 1.5rem;
@@ -122,18 +123,18 @@ main {
 	color: var(--pink);
 }
 
-#task .task .action {
-    display: flex;
-    margin: 0 -0.5rem;
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
 }
 
-.task .action button {
-    cursor: pointer;
-    margin: 0 0.5rem;
-    font-size: 1.125rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    transition: 0.4s;
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
 }
 
 .task .actions button:hover {
