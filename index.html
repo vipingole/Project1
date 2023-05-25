@@ -10,47 +10,45 @@
 </head>
 <body>
     <header>
-        <div class="header">
-            <h1>TO DO TASK</h1>
-        </div>
-        <div class="taskAddingBox">
-            <form id="adding-task-from">
+
+        <h1>TO DO TASK</h1>
+    
+            <form id="new-task-form">
                 <input 
                 type="text"
-                id="Adding-task"
+                name="new-task-input" 
+                id="new-task-input"
                 placeholder="What's on your mind?"/>
                 <input 
                 type="submit"
-                id="Adding-bttn"
+                id="new-task-submit"
                 value="Add Task"/>
             </form>
-        </div>
     </header>
 
     <main>
-        <div class="list">
-            <section>
-                <h2>Task list</h2>
-                    <div class="content">
-                        <input 
-                        type="text"
-                        id="addedlist"
-                        placeholder="Add your task here"
-                        readonly/>
+		<section class="task-list">
+			<h2>Tasks</h2>
 
-                    </div>
-                    <div class="action">
-                        <button class = "edit">Edit</button>
-                        <button class="delete">Delete</button>
+			<div id="tasks">
 
-                    </div>
+				<!-- <div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div>  -->
 
-                    
-                
-            </section>
-
-        </div>
-    </main>
+			</div>
+		</section>
+	</main>
 
 
     
